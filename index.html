@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sytle.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div>
+        <div class="margin">
+            <a class="a" href="./index.html">home</a>
+            <a class="a" href="./trinners.html">trinners</a>
+            <a class="a" href="./about.html">about</a>
+            
+            </div>
+
+        <div class="indeximg">
+            <img src="./indeximg.jpg" width="1330px" height="800px">
+            <div class="top-right">Let's Workout and Start Today</div>
+        </div>
+
+        <div class="secondContainer">
+            <table>
+                <tr>
+                    <td>
+                        <h1 class="secondContainertext">
+                            Be A Part Our <br>Community
+                        </h1>
+                    </td>
+                    <td>
+                        <div class="vl"></div>
+                    </td>
+                    <div >
+                        <td >
+                            <p id="pt" style="color: red; font-size: margin; text-align: center;"></p>
+                            <label class="lable" for="fn"  >Fist Name</label> 
+                            <input type="text" id="fn" required><br>
+                            <label class="lable" for="mn" >Middle Name</label> 
+                            <input type="text" id="mn" required><br>
+                            <label class="lable" for="ln" >Last Name</label> 
+                            <input type="text" id="ln" required><br>
+                            <label class="lable" for="age" >age </label> 
+                            <input type="number" id="age" required><br>
+                            
+                            <div class="btn">
+                                <button class="btnn" onclick="ebi()">Submit</button>
+                            </div>
+
+                         </td>
+                    </div>
+                    
+                    
+                </tr>
+                
+            </table>
+            
+            
+
+        </div>
+
+       
+    </div>
+
+    <footer >
+        <div class="btn">
+            <table class="table">
+                <tr>
+                    <td>
+                        <a href="https://www.instagram.com/ebiinnaazz/?hl=en">
+                            <i class="fa-brands fa-instagram-square" style="font-size: 30px;" id="insta"><span class="id">ebiinnaazz</span></i>
+                        </a>
+                    <a>
+                        <i class="fa-solid fa-envelope" style="font-size: 30px;" id="insta"><span class="id">ebinazer206@gmail.com</span></i>
+
+                    </a>
+                     
+                    </td>
+                    
+                </tr>
+                
+                
+            </table>
+        </div>
+        
+        <p class="id fp" >Copyrights <Span class="fp"> <i class="fa-solid fa-copyright"></i></span>2022 Ebinazer.All Rights Reserved</p>
+        
+    </footer>
+
+
+    <script>
+        function ebi(){
+    
+        a=document.getElementById("fn").value;
+        b=document.getElementById("mn").value;
+        p=document.getElementById("ln").value;
+        d=document.getElementById("age").value;
+        pt=document.getElementById("pt");
+        
+        if (a === ""){
+            pt.textContent="enter your firstname"
+        }
+        else if(b=== ""){
+            pt.textContent="enter your middelname"
+        }
+        else if(p=== ""){
+            pt.textContent="enter your lastname"
+        }
+        else if(d=== ""){
+            pt.textContent="enter your age"
+        }
+    
+        
+        else{
+            location.replace("")
+        }
+    
+        }
+            
+    
+    </script>
+    
+</body>
+</html>
